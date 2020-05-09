@@ -156,6 +156,9 @@
 
 				</div>
 			</footer>
+			<div class="loader-wrapper">
+			<div class="loader"></div>
+			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -164,6 +167,11 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			$(window).on("load",function(){
+					 $(".loader-wrapper").fadeOut("slow");
+			});
+					</script>
 
 	</body>
 </html>
